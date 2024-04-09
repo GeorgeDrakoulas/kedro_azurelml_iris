@@ -8,6 +8,6 @@ features:
   type: pandas.CSVDataset
   filepath: data/01_raw/features.csv
 
-automl_config:
+automl_configs:
   type: kedro.extras.datasets.json.JSONDataSet
   filepath: data/01_raw/automl_configs.json
