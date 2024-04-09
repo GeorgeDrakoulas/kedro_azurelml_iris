@@ -1,4 +1,13 @@
-# Here you can define all your data sets by using simple YAML syntax.
-#
-# Documentation for this file format can be found in "The Data Catalog"
-# Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+# data pre_processing
+data:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/iris.csv
+
+# data sciecne
+features:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/features.csv
+
+automl_config:
+  type: kedro.extras.datasets.json.JSONDataSet
+  filepath: data/01_raw/automl_configs.json
