@@ -1,0 +1,12 @@
+{
+  "automl_settings": {
+    "metric": "accuracy",
+    "time_budget": 40,
+    "task": "classification",
+    "estimator_list": ["rf", "lgbm", "xgboost"],
+    "verbose": 1,
+    "eval_method": "cv",
+    "n_splits": 5,
+    "ensemble": false
+  }
+}
